@@ -30,33 +30,18 @@ the post, probably (a lot?) more if your website has some visitors at that momen
 your visitors are gone.
 
 Here's the results of a quick benchmark I ran:
+
 Content type | Overall page generation time (HprSyntax) | Overall page generation time (WP-Syntax)
 _____________|__________________________________________|_________________________________________
-460 long     |                                          |
-code snippet |	Min: 520ms - Max: 580ms                 | Min: 980ms - Max: 1200ms
+460 long code snippet|Min: 520ms - Max: 580ms|Min: 980ms - Max: 1200ms
 _____________|__________________________________________|_________________________________________
-             |                                          |
-1 line long  |  Min: 520ms - Max: 580ms                 | Min: 750ms - Max: 940ms
-code snippet |                                          |
+1 line long code snippet|Min: 520ms - Max: 580ms|Min: 750ms - Max: 940ms
 _____________|__________________________________________|_________________________________________
-             |                                          |
-Two 1 line   |  Min: 520ms - Max: 580ms                 | Min: 540ms - Max: 640ms
-long code    |                                          |
-snippets     |                                          |
+Two 1 line long each code snippets|Min: 520ms - Max: 580ms|Min: 540ms - Max: 640ms
 _____________|__________________________________________|_________________________________________
-             |                                          |
-2 code       |  Min: 520ms - Max: 580ms                 | Min: 760ms - Max: 850ms
-snippets     |                                          |
-1 line long  |                                          |
-and 22 lines |                                          |
-long         |                                          |
+2 code snippets 1 line long and 22 lines long|Min: 520ms - Max: 580ms|Min: 760ms - Max: 850ms
 _____________|__________________________________________|_________________________________________
-             |                                          |
-13 code      |  Min: 580ms - Max: 650ms                 | Min: 3610ms - Max: 4070ms
-snippets from|                                          |
-1 to 2 lines |                                          |
-long each    |                                          |
-_____________|__________________________________________|_________________________________________
+13 code snippets from 1 to 2 lines long each|Min: 580ms - Max: 650ms|Min: 3610ms - Max: 4070ms
 
 Those results are INDICATIVES and may vary from a environement to another depending of:
 -Your wordpress version
