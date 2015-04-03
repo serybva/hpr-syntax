@@ -34,13 +34,9 @@ Here's the results of a quick benchmark I ran:
 Content type | Overall page generation time (HprSyntax) | Overall page generation time (WP-Syntax)
 _____________|__________________________________________|_________________________________________
 460 long code snippet|Min: 520ms - Max: 580ms|Min: 980ms - Max: 1200ms
-_____________|__________________________________________|_________________________________________
 1 line long code snippet|Min: 520ms - Max: 580ms|Min: 750ms - Max: 940ms
-_____________|__________________________________________|_________________________________________
 Two 1 line long each code snippets|Min: 520ms - Max: 580ms|Min: 540ms - Max: 640ms
-_____________|__________________________________________|_________________________________________
 2 code snippets 1 line long and 22 lines long|Min: 520ms - Max: 580ms|Min: 760ms - Max: 850ms
-_____________|__________________________________________|_________________________________________
 13 code snippets from 1 to 2 lines long each|Min: 580ms - Max: 650ms|Min: 3610ms - Max: 4070ms
 
 Those results are INDICATIVES and may vary from a environement to another depending of:
