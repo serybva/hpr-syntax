@@ -1,4 +1,4 @@
-=== HprSyntax ===
+# HprSyntax #
 Contributors: Sebastien Vray (www.serybva.com)
 Tags: syntax highlighting, syntax, highlight, code, formatting, code, CSS, html, php, sourcecode, cached, performance
 Requires at least: 3.5
@@ -7,7 +7,7 @@ Stable tag: 1.0
 
 HprSyntax a high performance syntax highlighter based on WP-Syntax/Geshi
 
-== Description ==
+## Description ##
 HprSyntax is a syntax highlighting plugin based on WP-Syntax wordpress plugin using Geshi
 
 It works slightly different, while WP-Syntax highlights each code snippet wrapped with pre-tag on EACH
@@ -81,33 +81,33 @@ Wrap code blocks with `<pre lang="LANGUAGE" line="1">` and `</pre>` where **"LAN
 is a [GeSHi](http://qbnz.com/highlighter/) supported language syntax.
 The `line` attribute is optional. [More usage examples](http://wordpress.org/extend/plugins/wp-syntax/other_notes/)
 
-== Installation ==
+## Installation ##
 
 1. Upload hpr-syntax.zip to your Wordpress plugins directory, usually `wp-content/plugins/` and unzip the file.  It will create a `wp-content/plugins/wp-syntax/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Create a post/page that contains a code snippet following the [proper usage syntax](http://wordpress.org/extend/plugins/wp-syntax/other_notes/).
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
-=First of all=
+###First of all###
 See the WP-Syntax FAQ http://wordpress.org/extend/plugins/wp-syntax/faq/ you might find some answers there
 
-=How to disable HprSyntax on a specific post?=
+###How to disable HprSyntax on a specific post?###
 Uncheck the 'Enable HprSyntax for this post' before you publish the post.
 
-=What are dead references?=
+###What are dead references?###
 Let's say you post a code snippet, HprSyntax will parse it using Geshi then it stores the output in the database.
 Later you delete that code snippet from the post, HprSyntax will NOT delete the corresponding Geshi output previously
 stored in the database, you've just created a dead reference.
 
-=How do I get my database rid of dead references?=
+###How do I get my database rid of dead references?###
 Go to the backend, then Settings->HprSyntax click the 'Clean' button at the bottom of the page, wait, it's done.
 By default HprSyntax does this automatically once a week, you can change this setting in the admin panel.
 
-=How to remove inline styles and use CSS classes instead?=
+###How to remove inline styles and use CSS classes instead?###
 Settings->HprSyntax check the 'Use css classes for highlighting instead of inline styles' checkbox, save the changes, you're done.
 
-=I changed some settings but the changes didn't apply, what I did wrong?=
+###I changed some settings but the changes didn't apply, what I did wrong?###
 This is because you didn't reprocess, as the code highlighting is pre-generated and stored to the database you need to regenerate
 all the HTML code for highlighting each time you changes a setting in the HprSyntax admin panel.
 Click the unprocess button, then click the process button and it's done.
@@ -115,37 +115,37 @@ You can also check the 'Reprocess on each setting change?' checkbox so HprSyntax
 each time you save changes to HrpSyntax settings, except those on which you explicitly disabled HprSyntax, be careful this can be a
 very slow operation.
 
-=What if I change the number of a pre tag id added by HprSyntax?=
+###What if I change the number of a pre tag id added by HprSyntax?###
 If the new number correspond to a Geshi output id in the database the code snippet will be replaced on the post display
 by another code snippet whichever comes first.
 If the new number don't matches any id in the database HprSyntax will create it, the former Geshi output will not be deleted (see dead references).
 
-=How do I remove the code highlighting from a specific post?=
+###How do I remove the code highlighting from a specific post?###
 Edit the post, uncheck the 'Enable HprSyntax for this post' and update the post.
 
-=How to enable HprSyntax for pages or posts only?=
+###How to enable HprSyntax for pages or posts only?###
 Go the to the HprSyntax settings panel, select the post types you want HprSyntax to be enabled on, save the changes.
 
-=How to override default HprSyntax CSS style?=
+###How to override default HprSyntax CSS style?###
 Copy the default CSS file (wp-content/plugins/hpr-syntax/css/hpr-syntax.css) to your theme directory, then modify it.
 Or just create a hpr-syntax.css file into your theme directory.
 
-== Original WP-Syntax readme below ==
+# Original WP-Syntax readme below #
 
-== Screenshots ==
+## Screenshots ##
 
 1. PHP, no line numbers.
 2. Java, with line numbers.
 3. Ruby, with line numbers starting at 18.
 
-== Usage ==
+## Usage ##
 
 Wrap code blocks with `<pre lang="LANGUAGE" line="1">` and `</pre>` where **"LANGUAGE"** is a [GeSHi](http://qbnz.com/highlighter/) supported
 language syntax. See below for a full list of supported languages.
 The `line` attribute is optional.
 
 **Example 1: PHP, no line numbers**
-
+```
     <pre lang="php">
     <div id="foo">
     <?php
@@ -155,10 +155,11 @@ The `line` attribute is optional.
     ?>
     </div>
     </pre>
+```
 
 
 **Example 2: Java, with line numbers**
-
+```
     <pre lang="java" line="1">
     public class Hello {
       public static void main(String[] args) {
@@ -166,9 +167,9 @@ The `line` attribute is optional.
       }
     }
     </pre>
-
+```
 **Example 3: Ruby, with line numbers starting at 18**
-
+```
     <pre lang="ruby" line="18">
     class Example
       def example(arg1)
@@ -176,15 +177,15 @@ The `line` attribute is optional.
       end
     end
     </pre>
-
+```
 **Example 4: If your code already has html entities escaped, use `escaped="true"` as an option**
-
+```
     <pre lang="xml" escaped="true">
     &lt;xml&gt;Hello&lt;/xml&gt;
     </pre>
-
+```
 **Example 5: PHP, with line numbers and highlighting a specific line**
-
+```
     <pre lang="php" line="1" highlight="3">
     <div id="foo">
     <?php
@@ -194,9 +195,9 @@ The `line` attribute is optional.
     ?>
     </div>
     </pre>
-
+```
 **Example 6: PHP, with a caption (file and/or file path of the source file)**
-
+```
     <pre lang="php" src"https://github.com/shazahm1/Connections/blob/master/connections.php">
     <div id="foo">
     <?php
@@ -206,8 +207,9 @@ The `line` attribute is optional.
     ?>
     </div>
     </pre>
+```
 
-== Supported Languages ==
+## Supported Languages ##
 
 The following languages are most supported in the `lang` attribute:
 
@@ -233,7 +235,7 @@ for a full list of supported languages.
 
 (Bold languages just highlight the more popular ones.)
 
-== Styling Guidelines ==
+## Styling Guidelines ##
 
 WP-Syntax colors code using the default GeSHi colors.  It also uses inline
 styling to make sure that code highlights still work in RSS feeds.  It uses a
@@ -243,7 +245,7 @@ template directory and modify it.  If a file named `wp-syntax.css` exists in
 your theme's template directory, this stylesheet is used instead of the default.
 This allows theme authors to add their own customizations as they see fit.
 
-== Advanced Customization ==
+## Advanced Customization ##
 
 WP-Syntax supports a `wp_syntax_init_geshi` action hook to customize GeSHi
 initialization settings.  Blog owners can handle the hook in a hand-made plugin
@@ -262,9 +264,9 @@ or somewhere else like this:
 This allows for a great possibility of different customizations. Be sure to
 review the [GeSHi Documentation](http://qbnz.com/highlighter/geshi-doc.html).
 
-== Changelog ==
+## Changelog ##
 
-= 1.0 02/09/2013 =
+### 1.0 02/09/2013 ###
 * NEW: CSS3 for alternating background lines for easier reading.
 * OTHER: Completely refactor code to utilize current best practices for plugin development which will provide a solid foundation for further development.
 * OTHER: Remove GeSHi contrib and test folders.
@@ -272,7 +274,7 @@ review the [GeSHi Documentation](http://qbnz.com/highlighter/geshi-doc.html).
 * OTHER: Move JavaScript to `js` subfolder.
 * OTHER: CSS fixes to keep theme from breaking output formatting.
 
-= 0.9.13 09/01/12 =
+### 0.9.13 09/01/12 ###
 * FEATURE: Added a new "src" shortcode option to allow reference of the source filename. Props: Steffen Vogel
 * BUG: Properly enqueue the CSS file.
 * BUG: Updated TinyMCE whitelist to allows required tags. Props: Steffen Vogel
@@ -351,10 +353,10 @@ conflicts with other plugins;
 
 **0.1** : First internal release; Uses GeSHi v1.0.7.16;
 
-== Upgrade Notice ==
+## Upgrade Notice ##
 
-= 0.9.10 =
+### 0.9.10 ###
 Fixes a security vulnerability. Upgrade immediately.
 
-= 0.9.9 =
+### 0.9.9 ###
 Compatible with WP >= 3.0 and latest GeSHi
