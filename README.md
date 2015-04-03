@@ -32,7 +32,7 @@ your visitors are gone.
 Here's the results of a quick benchmark I ran:
 
 Content type | Overall page generation time (HprSyntax) | Overall page generation time (WP-Syntax)
-_____________|__________________________________________|_________________________________________
+-------------|------------------------------------------|-----------------------------------------
 460 long code snippet|Min: 520ms - Max: 580ms|Min: 980ms - Max: 1200ms
 1 line long code snippet|Min: 520ms - Max: 580ms|Min: 750ms - Max: 940ms
 Two 1 line long each code snippets|Min: 520ms - Max: 580ms|Min: 540ms - Max: 640ms
