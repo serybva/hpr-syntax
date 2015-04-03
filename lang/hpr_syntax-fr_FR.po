@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HprSyntax_fr_FR\n"
+"POT-Creation-Date: 2013-05-08 21:40+0100\n"
+"PO-Revision-Date: 2013-05-08 21:40+0100\n"
+"Last-Translator: \n"
+"Language-Team: Sébastien Vray <sebastien.vray@gmail.com>\n"
+"Language: Français\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\blog\\wp-content\\plugins\\hpr-syntax\n"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:17
+msgid "Settings"
+msgstr "Réglages"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:18
+msgid "Global actions"
+msgstr "Actions globales"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:48
+msgid "HprSyntax settings page"
+msgstr "Page des options de HprSyntax"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:79
+msgid "Use css classes for highlighting instead of inline styles"
+msgstr ""
+"Utiliser des classes CSS pour la mise en forme à la place des styles en ligne"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:83
+msgid "Other settings"
+msgstr "Autres réglages"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:85
+msgid "The post types to process"
+msgstr "Les types de posts sur lesquels activer HprSyntax"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:85
+msgid "Post types"
+msgstr "Types de posts"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:92
+msgid "When HprSyntax must delete dead references from the database?"
+msgstr ""
+"Quand HprSyntax doit-il supprimer les références mortes de la base de "
+"données?"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:92
+msgid "Database clean interval"
+msgstr "Interval de nettoyage de la base de données"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:104
+msgid ""
+"This option tells HprSyntax to reprocess every previously highlighted code "
+"so the new settings apply, otherwise you will have to manually unprocess and "
+"process"
+msgstr ""
+"Cette option demande à HprSyntax de reformater tout code précédemment "
+"formaté pour que les changements dans la configuration s'appliquent, "
+"autrement vous devrez dé-formater et formater manuellement après "
+"enregistrement des nouvelles options"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:104
+msgid "Reprocess on each setting change?"
+msgstr "Re-formater à chaque changement de configuration?"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:110
+msgid "Save"
+msgstr "Enregistrer"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:123
+msgid "Processes ALL the content, may take a while"
+msgstr "Formater TOUS les posts, ça peut prendre un moment"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:124
+msgid "Process"
+msgstr "Formater"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:133
+msgid "Unprocesses ALL the content, may take a while too"
+msgstr "Dé-formater TOUS les posts"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:134
+msgid "Unprocess"
+msgstr "Dé-formater"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:142
+msgid "Deletes dead references from the database"
+msgstr "Supprime les références mortes de la base de données"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax-options.php:143
+msgid "Clean"
+msgstr "Nettoyer"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax.php:94
+msgid "Weekly"
+msgstr "Une fois par semaine"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax.php:95
+msgid "Monthly"
+msgstr "Une fois par mois"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax.php:96
+msgid "Every minute"
+msgstr "Toutes les minutes"
+
+#: C:\wamp\www\blog\wp-content\plugins\hpr-syntax/hpr-syntax.php:420
+msgid "Enable HprSyntax for this post"
+msgstr "Activer HprSyntax pour ce post"
